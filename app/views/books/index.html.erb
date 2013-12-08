@@ -1,0 +1,6 @@
+<h1>Books</h1>
+<% @books.each do |book| %>
+	<h2><%= book.title %></h2>
+	<p><%= book.authors.map { |author| author.first_name + " " + author.last_name }.join(", ") %></p>
+	<p><%= book.description %></p>
+<% end %>
