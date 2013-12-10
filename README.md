@@ -12,7 +12,9 @@ Many thanks to thoughtbot for excellent blog entries about this.
 To get up and running with the test database, run the following commands in order:
 
 rake db:create
+
 rake db:migrate
+
 rake db:seed
 
 If you're looking for a Postgres server for local development and have a Mac, check out [Postgres.app](http://postgresapp.com/).
