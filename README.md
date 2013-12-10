@@ -8,5 +8,13 @@ This example app shows how to implement full text search on your Ruby on Rails /
 Many thanks to thoughtbot for excellent blog entries about this.
 
 ### Quick setup if you want to step through the example
-1. Run rake db:setup to get up and running with the database, including seed values. If you're looking for a Postgres server for local development and have a Mac, check out [Postgres.app](http://postgresapp.com/).
-1. Run rails s and go to http://localhost:3000/books/ - or replace the domain and port as appropriate for your dev environment.
+
+To get up and running with the test database, run the following commands in order:
+
+rake db:create
+rake db:migrate
+rake db:seed
+
+If you're looking for a Postgres server for local development and have a Mac, check out [Postgres.app](http://postgresapp.com/).
+
+Run rails s and go to http://0.0.0.0:3000/books/ - or replace the domain and port as appropriate for your dev environment.
