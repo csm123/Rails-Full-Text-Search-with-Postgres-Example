@@ -1,9 +1,4 @@
 <h1>Books</h1>
-<%= form_tag({:controller=>"books", :action=>"index"}, :method=> "get") do %>
-  <%= text_field_tag :search, params[:search] %>
-  <%= submit_tag "Search" %>
-<% end %>
-
 <% @books.each do |book| %>
 	<h2><%= book.title %></h2>
 	<p><%= book.authors.map { |author| author.first_name + " " + author.last_name }.join(", ") %></p>

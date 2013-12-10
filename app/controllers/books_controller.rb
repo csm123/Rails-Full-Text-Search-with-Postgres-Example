@@ -1,9 +1,5 @@
 class BooksController < ActionController::Base
   def index
-  	if params[:search]
-  		@books = BookSearch.new(query: params[:search]).results
-  	else
-  		@books = Book.all
-  	end
+  	@books = Book.all
   end
 end
