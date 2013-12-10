@@ -10,10 +10,10 @@ class AddBookSearchesIndices < ActiveRecord::Migration
 
   def down
     ActiveRecord::Base.connection.execute <<-SQL
-      DROP INDEX index_books_on_title
-      DROP INDEX index_books_on_description
-      DROP INDEX index_authors_on_first_name
-      DROP INDEX index_authors_on_last_name
+      DROP INDEX index_books_on_title;
+      DROP INDEX index_books_on_description;
+      DROP INDEX index_authors_on_first_name;
+      DROP INDEX index_authors_on_last_name;
     SQL
   end
 
