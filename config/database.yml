@@ -5,7 +5,7 @@
 #   gem 'sqlite3'
 development:
   adapter: postgresql
-  database: books
+  database: full_text_search_example
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
